@@ -1,4 +1,5 @@
 import Sidebar from "./Sidebar/Sidebar";
+import styles from "./Layout.module.css";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -6,12 +7,11 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <section className="h-screen bg-white flex justify-center">
-      <div className="container h-full xl:px-2 w-screen max-w-5xl flex">
-        <Sidebar />
-        <div className="ml-36">{children}</div>
-      </div>
-    </section>
+    <div className="max-w-7xl mx-auto flex justify-between">
+      <Sidebar />
+      <div className={`grow ${styles.main}`}>{children}</div>
+      <div className="mr-2 sticky h-screen self-start" />
+    </div>
   );
 };
 

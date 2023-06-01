@@ -8,5 +8,8 @@
 
 body {
   @apply h-full bg-black;
-  min-height: 1700px;
+}
+
+div {
+  color: white;
 }
