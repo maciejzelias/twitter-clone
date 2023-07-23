@@ -17,8 +17,11 @@ module.exports = {
       maxWidth: {
         600: "600px",
       },
+      backgroundColor: {
+        onHover: "rgb(231,233,234,0.1)",
+      },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
