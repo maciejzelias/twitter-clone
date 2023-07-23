@@ -83,7 +83,7 @@ const navigations: navigationItem[] = [
 
 const Sidebar = () => {
   return (
-    <div className="max-h-screen overflow-y-scroll top-0 px-2 flex flex-col justify-between sticky">
+    <header className="max-h-screen top-0 px-2 flex flex-col justify-between sticky w-16 sm:w-20 xl:w-72">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-5">
           {navigations.map((navItem, index) => (
@@ -93,7 +93,7 @@ const Sidebar = () => {
         <button>tweet button</button>
       </div>
       <SidebarProfile />
-    </div>
+    </header>
   );
 };
 

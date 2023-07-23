@@ -6,8 +6,19 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        990: "990px",
+      },
+      minHeight: {
+        "150vh": "150vh",
+        "300vh": "300vh",
+      },
+      maxWidth: {
+        600: "600px",
+      },
+    },
   },
+  variants: {},
   plugins: [],
-}
-
+};
